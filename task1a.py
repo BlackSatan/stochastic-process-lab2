@@ -34,7 +34,7 @@ for i in range(0, int(K) - 1):
 print H
 f, (ax1, ax2) = plt.subplots(2)
 x = np.arange(0, 1, .02)
-ax1.plot(firstRandomParam, firstProcessList, 'r--')
-ax2.plot(secondRandomParam, secondProcessList, 'r--')
+ax1.hist(firstProcessList, 25)
+ax2.hist(secondProcessList, 25)
 
 plt.show()
